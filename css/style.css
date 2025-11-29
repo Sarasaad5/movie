@@ -1,0 +1,108 @@
+
+/*----------------sidebar---------------------*/
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    color: #fff;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    transition: 0.3s;
+    padding: 30px 20px;
+    z-index: 100;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar ul li {
+    list-style: none;
+    padding: 12px 0;
+    cursor: pointer;
+   /* font-size: 18px;*/
+    transition: 0.2s;
+}
+
+.sidebar ul li:hover {
+    margin-left: 8px;
+    
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+}
+
+
+/*----------------movies- cards---------------------*/
+
+.movie-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.movie-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.85);
+  padding: 15px;
+  transform: translateY(100%);
+  transition: .4s ease;
+}
+
+.movie-card:hover .movie-info {
+  transform: translateY(0);
+  width: 100%;
+}
+
+.movie-info h5 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.movie-info p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+
+
+.contact-input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #777;
+  border-radius: 0;
+  color: #fff;
+}
+
+.contact-input:focus {
+  color: #fff;
+  background: none;
+  box-shadow: none;
+  border-bottom: 1px solid #fff;
+}
+.contact-input::placeholder {
+  color: #ccc !important;   
+  opacity: 1;              
+}
